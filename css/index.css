@@ -1,0 +1,337 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: #F5F5F5;
+}
+.MAIN{
+    position: absolute;
+    width: 100%;
+    height: 750px;
+    left: 0px;
+    top: 0px;
+    background: #210E41;
+}
+.logo{
+    color: bisque;
+    font-size: 31px;
+}
+.menu{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu a{
+    width: 47px;
+    height: 18px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    align-items: center;
+
+    color: #FFFFFF;
+    text-decoration: none;
+    position: relative;
+}
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 8px;
+}
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #B065EB;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.menu div:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.apps-and-games{
+    position: absolute;
+    width: 525px;
+    height: 73px;
+    left: calc(50% - 525px/2 - 0.25px);
+    top: calc(50% - 73px/2 - 70.5px);
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+}
+.reviews{
+    position: absolute;
+    width: 538px;
+    height: 151px;
+    left: calc(50% - 538px/2 + 0.25px);
+    top: calc(50% - 151px/2 + 32.2px);
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 124px;
+    line-height: 151px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+}
+.search{
+    position: absolute;
+    width: 532px;
+    height: 50px;
+    left: calc(50% - 538px/2 + 0.25px);
+    top: calc(65% - 50px/2 + 32.2px);
+    box-sizing: border-box;
+}
+.input {
+    background-color: #212121;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 2rem;
+    border: 2px solid white;
+    border-radius: 38px;
+}
+.input:focus {
+    color: rgb(0, 255, 255);
+    background-color: #212121;
+    outline-color: rgb(0, 255, 255);
+    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+}
+.icon-search-bg{
+    position: absolute;
+    width: 68px;
+    height: 50px;
+    left: 464px;
+    top: 0px;
+    background: linear-gradient(51.65deg, #AE51F9 12.61%, #FFC48E 86.06%);
+    border-radius: 38px;
+}
+.icon-search{
+    position: absolute;
+    width: 22px;
+    top: calc(50% - 22px/2);
+    left: calc(50% - 22px/2);
+}
+.main-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    box-sizing: content-box;
+    position: absolute;
+    width: 1024px;
+    height: 375px;
+    left: calc(50% - 1024px/2);
+    top: 575px;
+}
+.content{
+    width: 215px;
+    height: 258px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.content:hover{
+    width: 290px;
+    height: 335px;
+}
+.content:hover .text-in-content{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+}
+.content:hover .creator{
+    position: absolute;
+    bottom: 6%;
+    left: 6.5%;
+}
+.content:hover .name-in-creator{
+    font-size: 18px;
+}
+.content:hover .btn{
+    width: 130px;
+    height: 35px;
+    font-size: 14px;
+}
+.pic-in-main-content{
+    width: 100%;
+    padding: 2px;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+.title-in-content{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    color: #181A1B;
+    padding: 0 20px;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+}
+.text-in-content{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    opacity: 0.9;    
+    color: #636772;
+    padding: 7px 20px 0px 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+}
+.creator{
+    position: absolute;
+    bottom: 6%;
+    left: 9%;
+}
+.name-in-creator{
+    font-weight: 500;
+    font-size: 14px;
+}
+.date-in-creator{
+    opacity: 0.7;
+    font-size: 12px;
+}
+.btn {
+    width: 95px;
+    height: 32px;
+    box-sizing: border-box;
+    --color: #00A97F;
+    --color2: rgb(10, 25, 30);
+    background-color: transparent;
+    border-radius: 10rem;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+}  
+.btn::after, .btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+}  
+.btn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}  
+.btn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}  
+.btn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+}  
+.btn:hover {
+    color: var(--color2);
+}  
+.btn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+}
+.latest-reviews{
+    position: absolute;
+    width: 1024px;
+    height: 1173px;
+    left: calc(50% - 1024px/2);
+    top: 1009px;
+    box-sizing: content-box;
+    padding: 0 16px;
+    background-color: #00A97F;
+}
+.latest-reviews-title{
+    width: fit-content;
+    margin: 0 auto;
+}
+.latest-reviews h1{
+    color: black;
+    text-align: center;
+}
+.latest-reviews-underline{
+    display: flex;
+    justify-content: space-between;
+}
+.latest-reviews-underline-1{
+    margin-top: -1.4rem;
+    height: 5px;
+    width: 90%;
+    border-radius: 50rem;
+    background-color: #D865EB;
+}
+.latest-reviews-underline-2{
+    margin-top: -1.4rem;
+    height: 5px;
+    width: 8%;
+    border-radius: 50rem;
+    background-color: #D865EB;
+}
+.latest-reviews-elements{
+    width: 200px;
+    height: 235px;    
+    background: #FFFFFF;
+    box-shadow: 0px 1px 50px rgba(34, 45, 56, 0.1), 0px 2px 4px rgba(79, 92, 151, 0.03);
+    border-radius: 5px;
+    text-align: center;
+}
+.img-in-latest-reviews-elements{
+    width: 180px;
+    height: 185px;
+    margin-top: 1.2rem;
+
+}
+.text-in-latest-reviews-elements
+{
+    font-weight: 700;
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
